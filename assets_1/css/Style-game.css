@@ -1,0 +1,1487 @@
+
+
+/* 
+    1-General 
+
+    2-Section1 --page1 
+     
+        2.1-img-background 
+      
+            2.2-titel 
+                2.2.1-text-title --div part of text
+                2.2.2-text1 --div part 1 of text 
+                
+            
+            2.3-levels 
+                2.3.1-img-level --class all image level 
+                2.3.2-level2 --class image level 2 
+                
+
+    3-Section2 --page2 
+
+        3.1- Section2 --page1 
+        3.2 update title Section2
+        3.2-background 
+        3.2.1-img-background moving background 
+        3.2.2- solid background --img pakcground 
+        3.3- strate squiggly line  
+        3.4- div to all continer levels
+        3.5- add levels 
+        3.6- img-level  
+        3.7- number-level    
+        3.8- lock level 
+        3.9 -special level 
+        3.10 p spacial level  
+        3.11 -show special livels 
+        3.12 -gerl 
+        3.13 -gerl moving  --move gerl from level to level
+
+    4- pop levle 
+
+*/
+
+
+
+
+
+
+/* 1-General */
+     .play-page *{
+        margin: 0;
+        padding: 0;
+    }
+
+
+ .play-page button{
+    background-color: rgba(250, 235, 215, 0);
+    border-color: rgba(250, 235, 215, 0);
+}
+
+/* 2-Section1 --page1 */
+     .play-page .section1{
+        position: relative;  
+        height:100vh;
+
+    }
+
+   
+
+/* 2.1-img-background */
+     .play-page .img-bac{
+        position: absolute;
+        background-image: url("../images/img/Reward1/PNG/Group\ 28020.png");
+        background-repeat: no-repeat;
+        background-size: 80%;
+        background-size: cover;
+        width: 100%;
+        height: 115.3%;
+        margin-top: -7%;
+        overflow: hidden;
+    }
+     .play-page .part{
+        position: absolute;
+        width: 25%;
+       height: 100%;
+       transform: translate(-50% ,-50%);
+    }
+     .play-page .part1{
+        top: 43%;
+        left: 20%;
+        width: 25%;
+    }
+
+     .play-page .part2{
+        top: 49%;
+        left: 53%;
+        width: 30%;
+    }
+
+     .play-page .part3{
+        top: 40%;
+        left: 83%;
+        width: 20%;
+    }
+     .play-page .solid-img-level{
+        position: absolute;
+        top: 62%;
+        width: 190%;
+        left: 63%;
+        transform: translate(-50%, 0);
+       
+    }
+     .play-page .solid-img-level2{
+    
+        left: 88%;
+        width: 178%;
+    }
+     .play-page .solid-img-level3{
+     
+        width: 165%;
+        left: 81%;
+      
+    }
+
+/* 2.2-titel */
+
+ .play-page .bac{
+    padding-top: 15px;
+zoom: 0.7;
+}
+ .play-page .bac-btn{
+    position: relative;
+    top: 8%;
+    left: -105%;
+    height: 40px;
+    width: 40px;
+}
+
+ .play-page .logo{
+width: 80px;
+height: 80px;
+left: -10%;
+top: 5%;
+position: absolute;
+}
+     .play-page .titel {
+        position: relative;
+        margin: 6.3% 2.5% ;
+        margin-top: 7%;
+    }
+     .play-page .titel , .play-page .titel2{
+        width: 77%;
+        height: 30%;
+        background-image: url(../images/img/Reward1/PNG/Top\ Bar.png);
+        background-size: 100%;
+        background-repeat: no-repeat;
+        z-index: 10;
+        left: 12%;
+    }
+
+/* 2.2.1-text-title --div part of text*/
+     .play-page .text-title{ 
+        
+        width: 25%;
+        top: 25%;
+        margin: 2.3% 0%;
+        font-size: 21px;
+        text-transform: capitalize;
+        font-weight: bold;
+        float: left;
+        zoom: 1.07;
+        text-align: left;
+    }
+     .play-page .text3{
+        width: 31%;
+    }
+
+    /*2.2.2-text1 --div part 1 of text */
+     .play-page .text1{
+        margin-left: 5%;
+    }
+ 
+
+
+     .play-page .text-title *{
+        float: left;  
+        padding: 3px;
+    }
+
+
+
+/*  2.3-levels */
+/* 2.3.1-img-level --class all image level */
+     .img-level{
+        position: absolute;
+    width: 71%;
+    height: 20%;
+    top: 60.2%;
+    left: 37%;
+    transform: translate(-50% ,0);
+    z-index: 2;
+    }
+
+/* 2.3.2-level2 --class image level 2 */
+    .level2{
+        height: 22%;
+        width: 80%;
+        left: 60.5%;
+        top: 56%;
+    
+    }
+
+    /* && level3 --class image level 3 */
+    .level3{ 
+    left: 78%;
+    top: 58.5%;
+    }
+
+    @media (max-width: 1132px){
+         .play-page .text-title *{
+            zoom: 0.7;
+        }
+
+         .play-page .logo, .play-page .bac-btn{
+            zoom: 0.8;
+            top: 6%;
+        }
+
+    }
+
+    @media (max-width: 932px){
+      
+         .play-page .logo, .play-page .bac-btn{
+            zoom: 0.8;
+            top: 6%;
+        }
+
+         .play-page .img-level{ top: 57.2%;}
+        .level2{ top: 52%;}
+        .level3{ top: 56.5%;}
+    }
+
+    @media (max-width: 832px){
+     
+         .play-page .text-title *{
+            zoom: 0.6;
+        }
+
+         .play-page .logo, .play-page .bac-btn{
+            zoom: 0.6;
+            top: 3%;
+        }
+
+    }
+
+    @media (max-width: 669px){
+    
+        .img-level{ top: 55.2%;}
+
+        .level2{ top: 52%;}
+        .level3{ top: 54.5%;}
+
+         .play-page .logo, .play-page .bac-btn{
+            zoom: 0.4;
+            top: 2%;
+        }
+         .play-page .text-title *{
+            zoom: 0.5;
+        }
+
+    }
+
+    @media (max-width: 599px){
+   
+         .play-page .text-title *{
+            zoom: 0.4;
+        }
+
+    }
+    /* 3-Section2 --page2 */
+
+    /* 3.1- Section2 --page1 */
+     .play-page .section2{
+        position: relative;  
+        height:100vh;
+        width: 500h;
+ 
+
+    }
+    /* 3.2 update title Section2 */
+     .play-page .titel2 {
+        position: fixed;
+        margin: 0% 2.5%;
+        margin-top: -1%;
+    }
+    
+/* 3.2-background */
+
+/* 3.2.1-img-background moving background */
+
+/* Level 6 --Screen expansion for Level 6 */
+ .play-page .all-page{
+    position: absolute;
+    width: 1400px;
+    height: 100%;
+    overflow: hidden;
+}
+
+
+/* Level 7 --Screen expansion for Level 7 */
+/* 
+.all-page{
+    position: absolute;
+    width: 1400px;
+    height: 100%;
+    overflow: hidden;
+} */
+
+
+/* Level 8 */
+/* 
+.all-page{
+    position: absolute;
+    width: 1650px;
+    height: 100%;
+    overflow: hidden;
+} */
+
+
+
+/* Level 9 */
+
+/* .all-page{
+    position: absolute;
+    width: 1900px;
+    height: 100%;
+    overflow: hidden;
+} */
+
+
+
+/* Level 10 */
+
+/* .all-page{
+    position: absolute;
+    width: 2200px;
+    height: 100%;
+    overflow: hidden;
+} */
+
+
+
+/* Level 11 */
+/* 
+.all-page{
+    position: absolute;
+    width: 2400px;
+    height: 100%;
+    overflow: hidden;
+} */
+
+
+
+/* Level 12 */
+/* 
+.all-page{
+    position: absolute;
+    width: 2600px;
+    height: 100%;
+    overflow: hidden;
+} */
+
+
+
+/* Level 13 */
+
+/* .all-page{
+    position: absolute;
+    width: 2850px;
+    height: 100%;
+    overflow: hidden;
+} */
+
+
+
+/* Level 14 */
+/* 
+.all-page{
+    position: absolute;
+    width: 3100px;
+    height: 100%;
+    overflow: hidden;
+} */
+
+
+
+/* Level 15 */
+/* 
+.all-page{
+    position: absolute;
+    width: 3300px;
+    height: 100%;
+    overflow: hidden;
+} */
+
+
+
+/* Level 16 */
+
+/* .all-page{
+    position: absolute;
+    width: 3600px;
+    height: 100%;
+    overflow: hidden;
+} */
+
+
+
+/* Level 17 */
+
+/* .all-page{
+    position: absolute;
+    width: 3850px;
+    height: 100%;
+    overflow: hidden;
+} */
+
+
+
+/* Level 18 */
+
+/* .all-page{
+    position: absolute;
+    width: 4050px;
+    height: 100%;
+    overflow: hidden;
+} */
+
+
+
+/* Level 19 */
+/* 
+.all-page{
+    position: absolute;
+    width: 4230px;
+    height: 100%;
+    overflow: hidden;
+} */
+
+
+
+/* Level 20 */
+/* 
+.all-page{
+    position: absolute;
+    width: 4500px;
+    height: 100%;
+    overflow: hidden;
+} */
+
+
+
+/* Level 21 */
+
+/* .all-page{
+    position: absolute;
+    width: 4700px;
+    height: 100%;
+    overflow: hidden;
+} */
+
+
+
+/* Level 22 */
+
+/* .all-page{
+    position: absolute;
+    width: 4870px;
+    height: 100%;
+    overflow: hidden;
+} */
+
+
+
+/* Level 23 */
+
+/* .all-page{
+    position: absolute;
+    width: 5100px;
+    height: 100%;
+    overflow: hidden;
+} */
+
+
+
+/* Level 24 */
+
+/* .all-page{
+    position: absolute;
+    width: 5300px;
+    height: 100%;
+    overflow: hidden;
+} */
+
+/* 3.2.2- solid background --img pakcground */
+     .play-page .images-background-slider{
+        position: absolute;
+        background-image: url(../images/img/Reward2/PNG/BG\ Long.png);
+        background-repeat: no-repeat;
+        /* background-size: 100%; */
+        background-size: cover;
+        width: 5300px;
+        height: 100%;
+        overflow: hidden;
+        /* top: 0; */
+        float: left;
+        cursor: pointer;
+        
+    }
+
+   /*3.3- strate squiggly line  */
+         .play-page .strate{
+            zoom: 0.66; 
+            top: 25%;
+            position: absolute;
+            transform: translate(-1px, 2px);
+            opacity: 0.7;
+        }
+         .play-page .strate1{
+            left: -3%;
+        }
+
+         .play-page .strate2{
+            left: 59%;
+        }
+
+        /*3.4- div to all continer levels*/
+        .div-pup{
+            display: inline-block;
+            position: absolute;
+            opacity: 0;
+            visibility: hidden;
+           
+        }
+
+        /*3.4- div to all continer level 1 to Define coordinates level 1*/
+       
+        .div-pup1{
+            top: 68%;
+            left: 0.5%;
+        }
+
+       /*3.4- div to all continer level 1 to Define coordinates level 2*/
+        .div-pup2{
+            top: 60%;
+            left: 4%;
+        }
+
+        .div-pup3{
+            top: 54%;
+            left: 8%;
+        }
+
+        .div-pup4{
+            top: 68%;
+            left: 11.2%;
+        }
+
+        .div-pup5{
+            top: 33%;
+            left: 14.2%;
+        }
+
+        .div-pup6{
+            top: 51%;
+            left: 18%;
+        }
+
+        .div-pup7{
+            top: 51%;
+            left: 22.5%;
+        }
+
+        .div-pup8{
+            top: 25%;
+            left: 27%;
+        }
+
+        .div-pup9{
+            top: 21%;
+            left: 32.5%;
+        }
+
+        .div-pup10{
+            top: 35%;
+            left: 37.5%;
+        }
+
+        .div-pup11{
+            top: 20%;
+            left: 42%;
+        }
+
+        .div-pup12{
+            top: 61%;
+            left: 45.5%;
+        }
+
+        .div-pup13{
+            top: 34%;
+            left: 50.5%;
+        }
+
+        .div-pup14{
+            top: 46.5%;
+            left: 55%;
+        }
+
+        .div-pup15{
+            top: 69%;
+            left: 59%;
+        }
+
+        .div-pup16{
+            top: 66%;
+            left: 64.5%;
+        }
+
+        .div-pup17{
+            top: 53%;
+            left: 69%;
+        }
+
+        .div-pup18{
+            top: 66%;
+            left: 73.3%;
+        }
+        
+        .div-pup19{
+            top: 28%;
+            left: 76.2%;
+        }
+
+        .div-pup20{
+            top: 55%;
+            left: 81%;
+        }
+
+        .div-pup21{
+            top: 49%;
+            left: 85%;
+        }
+
+        .div-pup22{
+            top: 35%;
+            left: 88%;
+        }
+
+        .div-pup23{
+            top: 17%;
+            left: 92.5%;
+        }
+
+        .div-pup24{
+            top: 27%;
+            left: 96.5%;
+        }
+
+        
+    /* 3.5- add levels */
+        /* add Level 1 */
+        .div-pup1{
+            opacity: 1;
+            visibility: visible;
+        }
+
+
+
+        /* add Level 2 --to show level in page*/
+        .div-pup2{
+            opacity: 1;
+            visibility: visible;
+        }
+
+
+        /* add Level 3 --to show level in page*/
+        .div-pup3{
+            opacity: 1;
+            visibility: visible;
+        }
+
+
+        /* add Level 4 --to show level in page*/
+        .div-pup4{
+            opacity: 1;
+            visibility: visible;
+        }
+
+
+        /* add Level 5 --to show level in page*/
+        .div-pup5{
+            opacity: 1;
+            visibility: visible;
+        }
+
+
+        /* add Level 6 --to show level in page*/
+        .div-pup6{
+            opacity: 1;
+            visibility: visible;
+        }
+
+
+        /* add Level 7 --to show level in page*/
+        /* .div-pup7{
+            opacity: 1;
+            visibility: visible;
+        } */
+
+
+        /* add Level 8 --to show level in page*/
+        /* .div-pup8{
+            opacity: 1;
+            visibility: visible;
+        } */
+
+
+        /* add Level 9 --to show level in page*/
+        /* .div-pup9{
+            opacity: 1;
+            visibility: visible;
+        } */
+
+
+        /* add Level 10--to show level in page */
+        .div-pup10{
+            opacity: 1;
+            visibility: visible;
+        }
+
+
+        /* add Level 11--to show level in page */
+        .div-pup11{
+            opacity: 1;
+            visibility: visible;
+        }
+
+
+        /* add Level 12--to show level in page */
+        .div-pup12{
+            opacity: 1;
+            visibility: visible;
+        }
+
+
+        /* add Level 13--to show level in page */
+        .div-pup13{
+            opacity: 1;
+            visibility: visible;
+        }
+
+
+        /* add Level 14--to show level in page */
+        .div-pup14{
+            opacity: 1;
+            visibility: visible;
+        }
+
+
+        /* add Level 15--to show level in page */
+        .div-pup15{
+            opacity: 1;
+            visibility: visible;
+        }
+
+
+        /* add Level 16--to show level in page */
+        .div-pup16{
+            opacity: 1;
+            visibility: visible;
+        }
+
+
+        /* add Level 17--to show level in page */
+        .div-pup17{
+            opacity: 1;
+            visibility: visible;
+        }
+
+
+        /* add Level 18--to show level in page */
+        .div-pup18{
+            opacity: 1;
+            visibility: visible;
+        }
+
+
+        /* add Level 19--to show level in page */
+        .div-pup19{
+            opacity: 1;
+            visibility: visible;
+        }
+
+
+        /* add Level 20--to show level in page */
+        .div-pup20{
+            opacity: 1;
+            visibility: visible;
+        }
+
+
+        /* add Level 21--to show level in page */
+        .div-pup21{
+            opacity: 1;
+            visibility: visible;
+        }
+
+
+        /* add Level 22--to show level in page */
+        .div-pup22{
+            opacity: 1;
+            visibility: visible;
+        }
+
+
+        /* add Level 23--to show level in page */
+        .div-pup23{
+            opacity: 1;
+            visibility: visible;
+        }
+
+
+        /* add Level 24--to show level in page */
+        .div-pup24{
+            opacity: 1;
+            visibility: visible;
+        }
+
+
+
+
+
+
+        
+    /* 3.6- img-level  */
+         .play-page .img-levelr{
+            position: RELATIVE;
+            zoom: 0.6;
+        }
+
+
+
+
+
+    /* 3.7- number-level  */
+         .play-page .hover-number{
+            box-sizing: border-box;
+            position: absolute;
+            
+            width: 70px;
+            border-radius: 100%;
+            top: 5%;
+            left: 25%;
+            height: 67px;
+        
+        }
+
+         .play-page .hover-number{
+            background: #00000087;
+        }
+
+    /* 3.7- number-level to all number  */
+         .play-page .number-pup{
+            position: absolute;
+            left: 39%;
+            display: inline-block;
+            text-align: center;
+            top: 13%;
+            ZOOM:0.7;
+        }
+        
+    /* 3.7- number-level 1  */
+         .play-page .number1{
+            left: 41%;
+        }
+
+        .play-page .number10,.play-page .number11,.play-page .number12,.play-page .number13,.play-page .number14,.play-page .number15,.play-page .number16,.play-page .number17,.play-page .number18,.play-page .number19,.play-page .number20,.play-page .number21,.play-page .number22,.play-page .number23,.play-page .number24{
+            left: 33%;
+        }
+
+        .play-page .number7{
+            left: 43%;
+            top: 15%;
+          
+        }
+
+        .play-page .number11{
+            left: 36%;
+        
+        
+        } 
+
+        .play-page .number17{
+            left: 35%;
+            top: 15%;
+            
+                }
+
+    /* 3.8- lock level */
+        .play-page .lock{
+            zoom: 0.6;
+            position: absolute;
+            left: 91%;
+            top: 50%;
+            display: inline-block;
+        }
+
+    /*3.9 -special level */
+        .play-page .special{
+            position: absolute;
+            zoom: 0.6;
+            top: 76%;
+            left: -42%;
+        }
+
+    /* 3.9 spacial level 2 */
+        .play-page .special2{
+            left: -22%;
+            top: 78%;
+        }
+        .play-page .special1{
+            left: -40px;
+            top: 67%;
+        }
+        .play-page .special4{
+            top: 64%;
+            left: -34%;
+        }
+        .play-page .special22{
+            
+            top: 31%;
+            left: 3%;
+
+        }
+
+    /* 3.10 p spacial level  */
+        .play-page .all-special p{
+            position: absolute;
+            left: -23%;
+            top: 109%;
+            font-size: 17px;
+            color: white;
+        }
+
+        .play-page .all-special1 p{
+            left: 1%;
+            top: 99%;
+        }
+
+        .play-page .all-special2 p{
+            left: -5%;
+            top: 110%;
+        }
+
+        .play-page .all-special4 p{
+            left: -16%;
+            top: 96%;
+        }
+
+        .play-page .all-special22 p{
+            left: 20%;
+            top: 103%;
+        }
+
+
+    /* 3.11 -show special livels */
+
+        .play-page .all-special{
+            opacity: 0;
+            visibility: hidden;
+        }
+
+    /* to add special level 1*/
+        /* .all-special1{
+            opacity: 1;
+            visibility: visible;
+        } */
+
+    /* to add special level 2*/
+        /* 
+        .all-special2{
+            opacity: 1;
+            visibility: visible;
+        } */
+
+    /* to add special level 3*/
+        .all-special3{
+            opacity: 1;
+            visibility: visible;
+        }
+
+    /* to add special level 4*/
+                
+        /* .all-special4{
+            opacity: 1;
+            visibility: visible;  }
+        */
+
+    /* to add special level 5*/
+        /*      
+        .all-special5{
+            opacity: 1;
+            visibility: visible;
+        } */
+
+    /* to add special level 6*/
+        .all-special6{
+            opacity: 1;
+            visibility: visible;
+        }
+
+    /* to add special level 7*/
+        /*      
+        .all-special7{
+            opacity: 1;
+            visibility: visible;
+        } */
+
+    /* to add special level 8*/
+        /*      
+        .all-special8{
+            opacity: 1;
+            visibility: visible;
+        } */
+
+    /* to add special level 9*/
+        .all-special9{
+            opacity: 1;
+            visibility: visible;
+        }
+
+    /* to add special level 10*/
+        /*      
+        .all-special10{
+            opacity: 1;
+            visibility: visible;
+        } */
+
+
+    /* to add special level 11*/
+        /*      
+        .all-special11{
+            opacity: 1;
+            visibility: visible;
+        } */
+
+    /* to add special level 12*/
+        .all-special12{
+            opacity: 1;
+            visibility: visible;
+        }
+
+    /* to add special level 13*/
+        /*      
+        .all-special13{
+            opacity: 1;
+            visibility: visible;
+        } */
+        
+        /* to add special level 14*/
+        .all-special14{
+            opacity: 1;
+            visibility: visible;
+        }
+
+    /* to add special level 15*/
+        /*                         
+        .all-special15{
+            opacity: 1;
+            visibility: visible ; }
+        */
+
+    /* to add special level 16*/
+        /*      
+        .all-special16{
+            opacity: 1;
+            visibility: visible;
+        } */
+
+    /* to add special level 17*/
+        .all-special17{
+            opacity: 1;
+            visibility: visible;
+        }
+
+    /* to add special level 18*/
+             
+        /* .all-special18{
+            opacity: 1;
+            visibility: visible;
+        } */
+
+    /* to add special level 19*/
+        /*      
+        .all-special19{
+            opacity: 1;
+            visibility: visible;
+        } */
+
+    /* to add special level 20*/
+        .all-special20{
+            opacity: 1;
+            visibility: visible;
+        }
+
+    /* to add special level 21*/
+        /*      
+        .all-special21{
+            opacity: 1;
+            visibility: visible;
+        } */
+
+    /* to add special level 22*/
+        /*                         
+        .all-special22{
+            opacity: 1;
+            visibility: visible;  }
+        */
+
+
+    /* to add special level 23*/
+        /* 
+        .all-special23{
+            opacity: 1;
+            visibility: visible;
+        } */
+
+    /* to add special level 24*/
+        .all-special24{
+            opacity: 1;
+            visibility: visible;
+        }
+
+
+
+    /* 3.12 -gerl */
+        .play-page .gerl{
+            position: absolute;
+            left: 0%;
+            top: 61%;
+            transition: 1s;
+
+        }
+
+        .play-page .img-gerl{
+            zoom: 0.5;
+        }
+      
+      
+    /* 3.13 -gerl moving  --move gerl from level to level*/
+
+        .gerl.move1{
+            top: 58%;
+            left: 0.5%;
+         }
+
+        .gerl.move2{
+        
+            top: 53%;
+            left: 3.5%;
+            
+        }
+        .gerl.move3{
+        
+            top: 47%;
+            left: 7.5%;
+            
+        }
+        .gerl.move4{
+        
+            top: 62%;
+            left: 10.7%;
+            
+        }
+        .gerl.move5{
+        
+            top: 26%;
+            left: 13.7%;
+            
+        }
+
+        .gerl.move6{
+        
+            top: 44%;
+            left: 17.5%;
+            
+        }
+        .gerl.move7{
+        
+            top: 44%;
+            left: 22%;
+            
+        }
+        .gerl.move8{
+        
+            top:18%;
+            left: 26.5%;
+            
+        }
+        .gerl.move9{
+        
+            top: 14%;
+            left: 32%;
+            
+        }
+        .gerl.move10{
+        
+            top: 28%;
+            left: 37%;
+            
+        }
+        .gerl.move11{
+        
+            top: 13%;
+            left: 41.5%;
+            
+        }
+        .gerl.move12{
+        
+            top:54%;
+            left: 45%;
+            
+        }
+        .gerl.move13{
+        
+            top: 27%;
+            left: 50%;
+        }
+        .gerl.move14{
+        
+            top: 39.5%;
+            left: 54.5%;
+            
+        }
+        .gerl.move15{
+        
+            top: 62%;
+            left: 58.5%;
+            
+        }
+        .gerl.move16{
+        
+            top: 59%;
+            left: 64%;
+            
+        }
+        .gerl.move17{
+        
+            top: 46%;
+            left: 68.5%;
+            
+        }
+        .gerl.move18{
+        
+            top: 60%;
+            left: 72.8%;
+            
+        }
+        .gerl.move19{
+        
+            top: 21%;
+            left: 75.8%;
+            
+        }
+        .gerl.move20{
+        
+            top: 48%;
+            left: 80.5%;
+            
+        }
+        .gerl.move21{
+            top: 42%;
+            left: 84.5%;
+            
+        }
+
+        .gerl.move22{
+            top: 28%;
+            left: 87.5%;
+        }
+
+        .gerl.move23{
+            top: 11%;
+            left: 92%;
+        }
+
+        .gerl.move24{
+            top: 20%;
+            left: 96%;
+        }
+        
+    /* 4- pop levle */
+        .play-page .card{
+            position: fixed;
+        width: 100%;
+        height: 100vh;
+        top: -150%;
+        z-index: 13;
+        left: 50%;
+       
+        }
+
+        .play-page .div-img-card{
+
+            height: 32%;
+            width: 40%;
+            border-radius: 15px;
+            margin-top: 3%;
+            margin-left: 31%;
+
+
+        }
+
+
+        .play-page .bacgr-pop{
+            position: absolute;
+            background-image: url(../images/img/Reward3/Group\ 28781.png);
+            background-size: 100%;
+            BACKGROUND-REPEAT: no-repeat;
+            width: 38%;
+            height: 93%;
+            left: 50%;
+            top: 50%;
+            transition: 0.5s;
+            transform: translate(-50% ,-50%);
+        }
+
+
+        .play-page .btn-class-pop ,.play-page .btn-Redeem-pop{
+            width: 25%;
+            background: #707070;
+            padding: 2%;
+            margin: 0 1%;
+            font-size: 1em;
+            opacity: 0.8;
+            color: #FFED56;
+            border: 2px solid;
+            border-radius: 8px;
+        }
+
+        .play-page .btn-card{
+            width: 100%;
+        
+    text-align: center;
+        }
+
+        .play-page .card.open{
+          
+           top: 50%;
+         transform: translate(-50% ,-50%);
+            opacity: 1;
+        
+        }
+
+        .play-page .card-title{
+            width: 30%;
+            text-transform: uppercase;
+            color: white;
+            font-family: Montserrat;
+            margin-left: 38%;
+            margin-top: 5%;
+        }
+
+        .play-page .card-title p {
+            float: left;
+            padding: 0 7px;
+           
+        }
+
+        .play-page .secand-title{
+            width: 67%;
+            /* position: absolute; */
+            /* left: 60%; */
+            /* top: 14.5%; */
+            text-transform: uppercase;
+            color: #845E18;
+            font-family: Montserrat;
+            font-size: 25px;
+            transform: translate(-50%, 0%);
+            margin-left: 62%;
+            margin-top: 3%;
+        
+        }
+
+        .play-page .img-card{
+         width: 100%;
+         height:100% ;
+        }
+
+        .play-page .all-card-pragraph{
+            height: 24%;
+            width: 100%; 
+            text-align: center;
+            font-family: Montserrat;
+            font-size: 16px;
+            font-weight: 500;
+            margin-top: 3%;
+        }
+
+        .play-page .all-card-pragraph p{
+            padding: 5px;
+            font-size: 14px;
+        }
+
+
+        .play-page .pragraph1 ,.play-page .pragraph3{
+            color: white;
+            font-weight: bold;
+        
+        }
+
+        .play-page .pragraph1 ,.play-page .pragraph2{
+            padding:1px !important ;
+        }
+   
+   
+        @media (max-width: 1332px){
+            .play-page .bacgr-pop{
+top: 60%;
+
+            }
+
+
+            .play-page .all-card-pragraph{
+                height: 17%;
+            }
+            .play-page .card-title {
+                top: 3.2%;
+                font-size: 17px;
+            }
+        
+            .play-page .secand-title {
+                left: 61%;
+                top: 9.5%;
+                font-size: 16px;
+            }
+        
+        
+        
+            
+            .all-card-pragraph {
+                top: 40%;
+            }
+        
+            .all-card-pragraph p {
+                font-size: 10px;
+            }
+        
+            .btn-class-pop, .btn-Redeem-pop{
+                font-size: 10px;
+                width: 17%;
+                padding: 8px;
+            }
+            
+            .bacgr-pop {
+                width: 340px;
+            }
+    
+            .btn-card {
+                top: 59%;
+            }
+        
+            .card.open{         
+                top: 60%;
+                 opacity: 1;
+             
+             }
+    
+             .div-img-card{
+                height: 22%;
+            }
+        }
+    
+        @media (max-width: 599px){
+
+
+           
+        }

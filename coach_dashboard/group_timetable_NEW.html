@@ -1,0 +1,864 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@700&family=Open+Sans&display=swap"
+        rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="../assets_1/fontAwesome_icons/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="../assets_1/css/styles.css" />
+    <title>Group Timetable</title>
+</head>
+
+<body>
+
+    <section class="bg_light_cream-s">
+        <div class="container-fluid">
+            <div class="row position-relative">
+
+                <!-- Left Side-Bar Section - START  -->
+                <div class="col-md-3 col-1 bg_darkGrey-s px-0 position_sticky-s" id="sideBar_column-d">
+                    <button class="btn d-md-none w-100 px-auto" id="sidebar_button-d" type="button" data-toggle="collapse"
+                        data-target="#sidebar-collapse">
+                        <span class="navbar-dark"><span class="">
+                            <i class="fa fa-bars fs_35px-s text_yellow-s" aria-hidden="true"></i>
+                        </span></span>
+                    </button>
+                    <div id="sidebar-collapse" class="collapse d-md-block text-center">
+                        <div class="px-34px-s">
+                            <div class="text-center">
+                                <div>
+                                    <img src="../assets_1/images/sidebar_top_logo.png" alt="logo" class="w_h_80px-s" />
+                                </div>
+                                <div>
+                                    <img class="br_50-s b_3px_solid_yellow-s" src="../assets_1/images/user_icon.png"
+                                        alt="user Icon" />
+                                </div>
+                                <div class="pt-2">
+                                    <div class="fw-700-s font_open_sans-s text_yellow-s fs_18px-s">
+                                        Raad
+                                    </div>
+                                    <div class=" mt-3">
+                                        <a class="font_open_sans-s text-white fs_20px-s td_none-s"
+                                        href="personal_info_NEW.html">ACCOUNT</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <hr class="h_2px-s bg_silver-s mt-5" />
+                            <div class="text-center">
+                                <ul class="list_style_none-s pl-0 font_open_sans-s">
+                                    <li class="py-3 "><a
+                                            class="td_none-s fs_20px-s fw_600-s text_silver-s text_silver_onHover-s"
+                                            href="personal_timetable_NEW.html">Personal Timetable</a></li>
+                                    <li class="py-3 bg_yellow-s br_5px-s"><a
+                                            class="td_none-s fs_20px-s fw_600-s text_black-s text_black_on_hover-s"
+                                            href="group_timetable_NEW.html">Group Timetable</a></li>
+                                    <li class="pt-3"><a
+                                            class="td_none-s fs_20px-s fw_600-s text_silver-s text_silver_onHover-s"
+                                            href="client_list_NEW.html">Personal Client</a></li>
+                                    <li class="pt-3"><a
+                                            class="td_none-s fs_20px-s fw_600-s text_silver-s text_silver_onHover-s"
+                                            href="earn_money_NEW.html">Earn Money</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Left Side-Bar Section - END  -->
+
+                <!-- Right Content Section - START  -->
+                <div class="col-md-9 col-11 px-0" id="right_content_column-d">
+                    <div class="px_30px-s px_18px-s">
+                        <div class="mt-4">
+                            <Span class="text_darkGrey-s fs_30px-s font_open_sans-s fw-700-s">Personal TimeTable</Span>
+                        </div>
+
+                        <!-- Table Section - START  -->
+                        <section class="mt-4 table_section-s">
+                            <div class="cotainer-fluid">
+                                <div class="bg_darkGrey-s br_10px-s top_bottom_bg_design_img-s pt-4 px-3    ">
+                                    <div class="row">
+                                        <div class="col-12">
+                                            <div class="ml-5 d-sm-flex justify-content-between align-items-center">
+                                                <div>
+                                                    <span class="fs_35px-s font_open_sans-s fw-800-s text_yellow-s">
+                                                        RAAD</span>
+                                                    <span
+                                                        class="fs_35px-s font_open_sans-s fw-800-s text-white">TIMETABLE</span>
+                                                </div>
+                                                <div class="my-auto">
+                                                    <a href="edit_personal_timetable_NEW.html">
+                                                        <button type="button"
+                                                            class="btn bg_yellow-s br_7px-s px-3 py-1">
+                                                            <i class="fa fa-pencil-square-o text_darkGrey-s"
+                                                                aria-hidden="true"></i>
+                                                            <span
+                                                                class="fs_16px-s text_darkGrey-s font_open_sans-s fw-600-s">Edit</span>
+                                                        </button>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+                                    <!-- Table Section - START  -->
+                                    <section class=" pb-3 mt-4 table_section-s">
+                                        <div class="row">
+                                            <div class="col-12">
+                                                <div class="table-responsive">
+                                                    <table class="table table-borderless">
+                                                        <tbody class="text-white">
+                                                            <tr class="text-center text_yellow-s fs_16px-s fw-700-s">
+                                                                <td style="height: 50px;">Sunday</td>
+                                                                <td style="height: 50px;">Monday</td>
+                                                                <td style="height: 50px;">Tuesday</td>
+                                                                <td style="height: 50px;">Wednesday</td>
+                                                                <td style="height: 50px;">Thursday</td>
+                                                                <td style="height: 50px;">Friday</td>
+                                                                <td style="height: 50px;">Saturday</td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+
+                                                    <table class="table table-bordered">
+                                                        <tbody>
+                                                            <!-- Table Row 1 - START  -->
+                                                            <tr>
+                                                                <td class="py-2 pr-2 pl-3">
+                                                                    <div class="d-flex align-items-end text-center">
+                                                                        <div
+                                                                            class="text-white fs_18px-s align-baseline mr-2">
+                                                                            Class
+                                                                        </div>
+                                                                        <div data-toggle="modal"
+                                                                            data-target="#addClassModal"
+                                                                            class="pointer_cursor-s">
+                                                                            <img width="20"
+                                                                                src="../assets_1/images/add_class_icon.png"
+                                                                                alt="">
+                                                                        </div>
+                                                                    </div>
+                                                                    <div
+                                                                        class=" fs_13px-s mt-2 font_open_sans-s text-white">
+                                                                        <span>10:00 AM</span>
+                                                                    </div>
+                                                                    <div
+                                                                        class=" fs_13px-s  font_open_sans-s text-white">
+                                                                        <span>10:45 AM</span>
+                                                                    </div>
+                                                                </td>
+                                                                <td class="py-1 px-2">
+                                                                </td>
+                                                                <td class="py-2 pr-2 pl-3">
+                                                                    <div class="d-flex align-items-end text-center">
+                                                                        <div
+                                                                            class="text-white fs_18px-s align-baseline mr-2">
+                                                                            Class
+                                                                        </div>
+                                                                        <div data-toggle="modal"
+                                                                            data-target="#addClassModal"
+                                                                            class="pointer_cursor-s">
+                                                                            <img width="20"
+                                                                                src="../assets_1/images/add_class_icon.png"
+                                                                                alt="">
+                                                                        </div>
+                                                                    </div>
+                                                                    <div
+                                                                        class=" fs_13px-s mt-2 font_open_sans-s text-white">
+                                                                        <span>10:00 AM</span>
+                                                                    </div>
+                                                                    <div
+                                                                        class=" fs_13px-s  font_open_sans-s text-white">
+                                                                        <span>10:45 AM</span>
+                                                                    </div>
+                                                                </td>
+                                                                <td class="py-1 px-2">
+                                                                </td>
+                                                                <td class="py-1 px-2">
+                                                                </td>
+                                                                <td class="py-1 px-2">
+                                                                </td>
+                                                                <td class="py-1 px-2">
+                                                                </td>
+                                                            </tr>
+                                                            <!-- Table Row 1 - START  -->
+
+                                                            <!-- Table Row 2 - START  -->
+                                                            <tr>
+                                                                <td class="py-1 px-2">
+                                                                </td>
+                                                                <td class="py-2 px-2 text-center">
+                                                                    <div>
+                                                                        <img class="w_100px-s min_w_80px-s"
+                                                                            src="../assets_1/images/booked_img.png"
+                                                                            alt="ribbon" />
+                                                                    </div>
+                                                                    <div class="text-white fs_18px-s align-baseline ">
+                                                                        Class
+                                                                    </div>
+                                                                    <div
+                                                                        class=" fs_13px-s mt-2 font_open_sans-s text-white">
+                                                                        <span>10:00 AM</span>
+                                                                    </div>
+                                                                    <div
+                                                                        class=" fs_13px-s  font_open_sans-s text-white">
+                                                                        <span>10:45 AM</span>
+                                                                    </div>
+                                                                </td>
+                                                                <td class="py-1 px-2">
+                                                                </td>
+                                                                <td class="py-1 px-2">
+                                                                </td>
+                                                                <td class="py-2 pr-2 pl-3">
+                                                                    <div class="d-flex align-items-end text-center">
+                                                                        <div
+                                                                            class="text-white fs_18px-s align-baseline mr-2">
+                                                                            Class
+                                                                        </div>
+                                                                        <div data-toggle="modal"
+                                                                            data-target="#addClassModal"
+                                                                            class="pointer_cursor-s">
+                                                                            <img width="20"
+                                                                                src="../assets_1/images/add_class_icon.png"
+                                                                                alt="">
+                                                                        </div>
+                                                                    </div>
+                                                                    <div
+                                                                        class=" fs_13px-s mt-2 font_open_sans-s text-white">
+                                                                        <span>10:00 AM</span>
+                                                                    </div>
+                                                                    <div
+                                                                        class=" fs_13px-s  font_open_sans-s text-white">
+                                                                        <span>10:45 AM</span>
+                                                                    </div>
+                                                                </td>
+                                                                <td class="py-1 px-2">
+                                                                </td>
+                                                                <td class="py-1 px-2">
+                                                                </td>
+
+
+                                                            </tr>
+                                                            <!-- Table Row 2 - END  -->
+
+                                                            <!-- Table Row 3 - START  -->
+                                                            <tr>
+                                                                <td class="py-2 px-2 text-center">
+                                                                    <div>
+                                                                        <img class="w_100px-s min_w_80px-s"
+                                                                            src="../assets_1/images/booked_img.png"
+                                                                            alt="ribbon" />
+                                                                    </div>
+                                                                    <div class="text-white fs_18px-s align-baseline ">
+                                                                        Class
+                                                                    </div>
+                                                                    <div
+                                                                        class=" fs_13px-s mt-2 font_open_sans-s text-white">
+                                                                        <span>10:00 AM</span>
+                                                                    </div>
+                                                                    <div
+                                                                        class=" fs_13px-s  font_open_sans-s text-white">
+                                                                        <span>10:45 AM</span>
+                                                                    </div>
+                                                                </td>
+                                                                <td class="py-1 px-2">
+                                                                </td>
+                                                                <td class="py-1 px-2">
+                                                                </td>
+                                                                <td class="py-1 px-2">
+                                                                </td>
+                                                                <td class="py-1 px-2">
+                                                                </td>
+                                                                <td class="py-1 px-2">
+                                                                </td>
+                                                                <td class="py-1 px-2">
+                                                                </td>
+                                                            </tr>
+                                                            <!-- Table Row 3 - END  -->
+
+                                                            <!-- Table Row 4 - START  -->
+                                                            <tr>
+                                                                <td class="py-1 px-2">
+                                                                </td>
+                                                                <td class="py-1 px-2">
+                                                                </td>
+                                                                <td class="py-1 px-2">
+                                                                </td>
+                                                                <td class="py-1 px-2">
+                                                                </td>
+                                                                <td class="py-1 px-2">
+                                                                </td>
+                                                                <td class="py-1 px-2">
+                                                                </td>
+                                                                <td class="py-1 px-2">
+                                                                </td>
+                                                            </tr>
+                                                            <!-- Table Row 4 - END  -->
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </section>
+                                    <!-- Table Section - END  -->
+
+                                    <div class="text-center">
+                                        <button type="button" class="btn mb-4 px_70px-s py-2 bg_yellow-s br_7px-s">
+                                            <span class="fs_12px-s text_darkGrey-s font_open_sans-s fw-700-s">
+                                                Get in Touch
+                                            </span>
+                                        </button>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </section>
+                        <!-- Table Section - END  -->
+
+                        <div class="col-4">
+
+                        </div>
+                        <!-- Slider section - START  -->
+                        <section class="pt-5 pb-5">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-12">
+                                        <h3 class="mb-3">
+                                            <Span class="text_darkGrey-s fs_30px-s font_open_sans-s fw-700-s">Clients
+                                            </Span>
+                                        </h3>
+                                    </div>
+                                    <div class="col-1 text-center d-flex align-items-center justify-content-center">
+                                        <a class=" mb-3 mr-1" href="#carouselExampleIndicators2"
+                                            role="button" data-slide="prev">
+                                            <img class="w_30px-s" src="../assets_1/images/slider_left_icon.png" alt="slide left" />
+                                        </a>
+                                    </div>
+                                    <!--  -->
+                                    <div class="col-sm-10 col-9 px-sm-3 px-0">
+                                        <div id="carouselExampleIndicators2" class="carousel slide"
+                                            data-ride="carousel">
+
+                                            <div class="carousel-inner">
+                                                <div class="carousel-item active carousel-item-left">
+                                                    <div class="d-flex">
+
+                                                        <div class="col-xl-4 col-lg-6 col-sm-12 col-12 d-flex flex-column  ">
+                                                            <div class="card bg_darkGrey-s p-3">
+                                                                <div class="text-center mt-2">
+                                                                    <div class="br_50-s">
+                                                                        <img class="w_80px-s" src="../assets_1/images/card_coach_img.png" alt="user image" />
+                                                                    </div>
+                                                                    <div class="mt-3">
+                                                                        <span class="text_yellow-s fs_18px-s fw-700-s font_open_sans-s">Ahmad Zayn</span>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="mt-4">
+                                                                    <ul class="p-0 list_style_none-s">
+                                                                        <li class="my-1">
+                                                                            <div class="d-flex">
+                                                                                <div>
+                                                                                    <img class="w_30px-s" src="../assets_1/images/phone_yellow_icon.png" alt="phone icon" />
+                                                                                </div>
+                                                                                <div class="ml-2">
+                                                                                    <span class="text-white fs_12px-s fw-700-s fs_9px_after_screen_400 font_open_sans-s">
+                                                                                        +1 321 3214567
+                                                                                    </span>
+                                                                                </div>
+                                                                            </div>
+                                                                        </li>
+                                                                        <li class="my-2">
+                                                                            <div class="d-flex">
+                                                                                <div>
+                                                                                    <img class="w_30px-s" src="../assets_1/images/mail_yellow_icon.png" alt="phone icon" />
+                                                                                </div>
+                                                                                <div class="ml-2">
+                                                                                    <span class="text-white break_word-s fs_12px-s fw-700-s fs_9px_after_screen_400 font_open_sans-s">
+                                                                                        ahmadzayn@mail.com
+                                                                                    </span>
+                                                                                </div>
+                                                                            </div>
+                                                                        </li>
+                                                                    </ul>
+                                                                </div>
+                                                                <div class="text-center mt-2">
+                                                                    <button type="button" class="btn bg_yellow-s br_7px-s px-sm-3 px-1 py-1">
+                                                                        <span
+                                                                            class="fs_15px-s font_open_sans-s text fw-700-s">VIEW DETAILS</span>
+                                                                    </button>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-xl-4 col-lg-6 col-sm-12 col-12 d-flex flex-column  ">
+                                                            <div class="card bg_darkGrey-s p-3">
+                                                                <div class="text-center mt-2">
+                                                                    <div class="br_50-s">
+                                                                        <img class="w_80px-s" src="../assets_1/images/card_coach_img.png" alt="user image" />
+                                                                    </div>
+                                                                    <div class="mt-3">
+                                                                        <span class="text_yellow-s fs_18px-s fw-700-s font_open_sans-s">Ahmad Zayn</span>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="mt-4">
+                                                                    <ul class="p-0 list_style_none-s">
+                                                                        <li class="my-1">
+                                                                            <div class="d-flex">
+                                                                                <div>
+                                                                                    <img class="w_30px-s" src="../assets_1/images/phone_yellow_icon.png" alt="phone icon" />
+                                                                                </div>
+                                                                                <div class="ml-2">
+                                                                                    <span class="text-white fs_12px-s fw-700-s fs_9px_after_screen_400 font_open_sans-s">
+                                                                                        +1 321 3214567
+                                                                                    </span>
+                                                                                </div>
+                                                                            </div>
+                                                                        </li>
+                                                                        <li class="my-2">
+                                                                            <div class="d-flex">
+                                                                                <div>
+                                                                                    <img class="w_30px-s" src="../assets_1/images/mail_yellow_icon.png" alt="phone icon" />
+                                                                                </div>
+                                                                                <div class="ml-2">
+                                                                                    <span class="text-white break_word-s fs_12px-s fw-700-s fs_9px_after_screen_400 font_open_sans-s">
+                                                                                        ahmadzayn@mail.com
+                                                                                    </span>
+                                                                                </div>
+                                                                            </div>
+                                                                        </li>
+                                                                    </ul>
+                                                                </div>
+                                                                <div class="text-center mt-2">
+                                                                    <button type="button" class="btn bg_yellow-s br_7px-s px-sm-3 px-1 py-1">
+                                                                        <span
+                                                                            class="fs_15px-s font_open_sans-s text fw-700-s">VIEW DETAILS</span>
+                                                                    </button>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-xl-4 col-lg-6 col-sm-12 col-12 d-flex flex-column  ">
+                                                            <div class="card bg_darkGrey-s p-3">
+                                                                <div class="text-center mt-2">
+                                                                    <div class="br_50-s">
+                                                                        <img class="w_80px-s" src="../assets_1/images/card_coach_img.png" alt="user image" />
+                                                                    </div>
+                                                                    <div class="mt-3">
+                                                                        <span class="text_yellow-s fs_18px-s fw-700-s font_open_sans-s">Ahmad Zayn</span>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="mt-4">
+                                                                    <ul class="p-0 list_style_none-s">
+                                                                        <li class="my-1">
+                                                                            <div class="d-flex">
+                                                                                <div>
+                                                                                    <img class="w_30px-s" src="../assets_1/images/phone_yellow_icon.png" alt="phone icon" />
+                                                                                </div>
+                                                                                <div class="ml-2">
+                                                                                    <span class="text-white fs_12px-s fw-700-s fs_9px_after_screen_400 font_open_sans-s">
+                                                                                        +1 321 3214567
+                                                                                    </span>
+                                                                                </div>
+                                                                            </div>
+                                                                        </li>
+                                                                        <li class="my-2">
+                                                                            <div class="d-flex">
+                                                                                <div>
+                                                                                    <img class="w_30px-s" src="../assets_1/images/mail_yellow_icon.png" alt="phone icon" />
+                                                                                </div>
+                                                                                <div class="ml-2">
+                                                                                    <span class="text-white break_word-s fs_12px-s fw-700-s fs_9px_after_screen_400 font_open_sans-s">
+                                                                                        ahmadzayn@mail.com
+                                                                                    </span>
+                                                                                </div>
+                                                                            </div>
+                                                                        </li>
+                                                                    </ul>
+                                                                </div>
+                                                                <div class="text-center mt-2">
+                                                                    <button type="button" class="btn bg_yellow-s br_7px-s px-sm-3 px-1 py-1">
+                                                                        <span
+                                                                            class="fs_15px-s font_open_sans-s text fw-700-s">VIEW DETAILS</span>
+                                                                    </button>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        
+
+                                                    </div>
+                                                </div>
+                                                <div class="carousel-item carousel-item-next carousel-item-left">
+                                                    <div class="d-flex">
+
+                                                        <div class="col-xl-4 col-lg-6 col-sm-12 col-12 d-flex flex-column  ">
+                                                            <div class="card bg_darkGrey-s p-3">
+                                                                <div class="text-center mt-2">
+                                                                    <div class="br_50-s">
+                                                                        <img class="w_80px-s" src="../assets_1/images/card_coach_img.png" alt="user image" />
+                                                                    </div>
+                                                                    <div class="mt-3">
+                                                                        <span class="text_yellow-s fs_18px-s fw-700-s font_open_sans-s">Ahmad Zayn</span>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="mt-4">
+                                                                    <ul class="p-0 list_style_none-s">
+                                                                        <li class="my-1">
+                                                                            <div class="d-flex">
+                                                                                <div>
+                                                                                    <img class="w_30px-s" src="../assets_1/images/phone_yellow_icon.png" alt="phone icon" />
+                                                                                </div>
+                                                                                <div class="ml-2">
+                                                                                    <span class="text-white fs_12px-s fw-700-s fs_9px_after_screen_400 font_open_sans-s">
+                                                                                        +1 321 3214567
+                                                                                    </span>
+                                                                                </div>
+                                                                            </div>
+                                                                        </li>
+                                                                        <li class="my-2">
+                                                                            <div class="d-flex">
+                                                                                <div>
+                                                                                    <img class="w_30px-s" src="../assets_1/images/mail_yellow_icon.png" alt="phone icon" />
+                                                                                </div>
+                                                                                <div class="ml-2">
+                                                                                    <span class="text-white break_word-s fs_12px-s fw-700-s fs_9px_after_screen_400 font_open_sans-s">
+                                                                                        ahmadzayn@mail.com
+                                                                                    </span>
+                                                                                </div>
+                                                                            </div>
+                                                                        </li>
+                                                                    </ul>
+                                                                </div>
+                                                                <div class="text-center mt-2">
+                                                                    <button type="button" class="btn bg_yellow-s br_7px-s px-sm-3 px-1 py-1">
+                                                                        <span
+                                                                            class="fs_15px-s font_open_sans-s text fw-700-s">VIEW DETAILS</span>
+                                                                    </button>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-xl-4 col-lg-6 col-sm-12 col-12 d-flex flex-column  ">
+                                                            <div class="card bg_darkGrey-s p-3">
+                                                                <div class="text-center mt-2">
+                                                                    <div class="br_50-s">
+                                                                        <img class="w_80px-s" src="../assets_1/images/card_coach_img.png" alt="user image" />
+                                                                    </div>
+                                                                    <div class="mt-3">
+                                                                        <span class="text_yellow-s fs_18px-s fw-700-s font_open_sans-s">Ahmad Zayn</span>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="mt-4">
+                                                                    <ul class="p-0 list_style_none-s">
+                                                                        <li class="my-1">
+                                                                            <div class="d-flex">
+                                                                                <div>
+                                                                                    <img class="w_30px-s" src="../assets_1/images/phone_yellow_icon.png" alt="phone icon" />
+                                                                                </div>
+                                                                                <div class="ml-2">
+                                                                                    <span class="text-white fs_12px-s fw-700-s fs_9px_after_screen_400 font_open_sans-s">
+                                                                                        +1 321 3214567
+                                                                                    </span>
+                                                                                </div>
+                                                                            </div>
+                                                                        </li>
+                                                                        <li class="my-2">
+                                                                            <div class="d-flex">
+                                                                                <div>
+                                                                                    <img class="w_30px-s" src="../assets_1/images/mail_yellow_icon.png" alt="phone icon" />
+                                                                                </div>
+                                                                                <div class="ml-2">
+                                                                                    <span class="text-white break_word-s fs_12px-s fw-700-s fs_9px_after_screen_400 font_open_sans-s">
+                                                                                        ahmadzayn@mail.com
+                                                                                    </span>
+                                                                                </div>
+                                                                            </div>
+                                                                        </li>
+                                                                    </ul>
+                                                                </div>
+                                                                <div class="text-center mt-2">
+                                                                    <button type="button" class="btn bg_yellow-s br_7px-s px-sm-3 px-1 py-1">
+                                                                        <span
+                                                                            class="fs_15px-s font_open_sans-s text fw-700-s">VIEW DETAILS</span>
+                                                                    </button>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-xl-4 col-lg-6 col-sm-12 col-12 d-flex flex-column  ">
+                                                            <div class="card bg_darkGrey-s p-3">
+                                                                <div class="text-center mt-2">
+                                                                    <div class="br_50-s">
+                                                                        <img class="w_80px-s" src="../assets_1/images/card_coach_img.png" alt="user image" />
+                                                                    </div>
+                                                                    <div class="mt-3">
+                                                                        <span class="text_yellow-s fs_18px-s fw-700-s font_open_sans-s">Ahmad Zayn</span>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="mt-4">
+                                                                    <ul class="p-0 list_style_none-s">
+                                                                        <li class="my-1">
+                                                                            <div class="d-flex">
+                                                                                <div>
+                                                                                    <img class="w_30px-s" src="../assets_1/images/phone_yellow_icon.png" alt="phone icon" />
+                                                                                </div>
+                                                                                <div class="ml-2">
+                                                                                    <span class="text-white fs_12px-s fw-700-s fs_9px_after_screen_400 font_open_sans-s">
+                                                                                        +1 321 3214567
+                                                                                    </span>
+                                                                                </div>
+                                                                            </div>
+                                                                        </li>
+                                                                        <li class="my-2">
+                                                                            <div class="d-flex">
+                                                                                <div>
+                                                                                    <img class="w_30px-s" src="../assets_1/images/mail_yellow_icon.png" alt="phone icon" />
+                                                                                </div>
+                                                                                <div class="ml-2">
+                                                                                    <span class="text-white break_word-s fs_12px-s fw-700-s fs_9px_after_screen_400 font_open_sans-s">
+                                                                                        ahmadzayn@mail.com
+                                                                                    </span>
+                                                                                </div>
+                                                                            </div>
+                                                                        </li>
+                                                                    </ul>
+                                                                </div>
+                                                                <div class="text-center mt-2">
+                                                                    <button type="button" class="btn bg_yellow-s br_7px-s px-sm-3 px-1 py-1">
+                                                                        <span
+                                                                            class="fs_15px-s font_open_sans-s text fw-700-s">VIEW DETAILS</span>
+                                                                    </button>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        
+
+                                                    </div>
+                                                </div>
+                                                <div class="carousel-item">
+                                                    <div class="d-flex">
+
+                                                        <div class="col-xl-4 col-lg-6 col-sm-12 col-12 d-flex flex-column  ">
+                                                            <div class="card bg_darkGrey-s p-3">
+                                                                <div class="text-center mt-2">
+                                                                    <div class="br_50-s">
+                                                                        <img class="w_80px-s" src="../assets_1/images/card_coach_img.png" alt="user image" />
+                                                                    </div>
+                                                                    <div class="mt-3">
+                                                                        <span class="text_yellow-s fs_18px-s fw-700-s font_open_sans-s">Ahmad Zayn</span>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="mt-4">
+                                                                    <ul class="p-0 list_style_none-s">
+                                                                        <li class="my-1">
+                                                                            <div class="d-flex">
+                                                                                <div>
+                                                                                    <img class="w_30px-s" src="../assets_1/images/phone_yellow_icon.png" alt="phone icon" />
+                                                                                </div>
+                                                                                <div class="ml-2">
+                                                                                    <span class="text-white fs_12px-s fw-700-s fs_9px_after_screen_400 font_open_sans-s">
+                                                                                        +1 321 3214567
+                                                                                    </span>
+                                                                                </div>
+                                                                            </div>
+                                                                        </li>
+                                                                        <li class="my-2">
+                                                                            <div class="d-flex">
+                                                                                <div>
+                                                                                    <img class="w_30px-s" src="../assets_1/images/mail_yellow_icon.png" alt="phone icon" />
+                                                                                </div>
+                                                                                <div class="ml-2">
+                                                                                    <span class="text-white break_word-s fs_12px-s fw-700-s fs_9px_after_screen_400 font_open_sans-s">
+                                                                                        ahmadzayn@mail.com
+                                                                                    </span>
+                                                                                </div>
+                                                                            </div>
+                                                                        </li>
+                                                                    </ul>
+                                                                </div>
+                                                                <div class="text-center mt-2">
+                                                                    <button type="button" class="btn bg_yellow-s br_7px-s px-sm-3 px-1 py-1">
+                                                                        <span
+                                                                            class="fs_15px-s font_open_sans-s text fw-700-s">VIEW DETAILS</span>
+                                                                    </button>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-xl-4 col-lg-6 col-sm-12 col-12 d-flex flex-column  ">
+                                                            <div class="card bg_darkGrey-s p-3">
+                                                                <div class="text-center mt-2">
+                                                                    <div class="br_50-s">
+                                                                        <img class="w_80px-s" src="../assets_1/images/card_coach_img.png" alt="user image" />
+                                                                    </div>
+                                                                    <div class="mt-3">
+                                                                        <span class="text_yellow-s fs_18px-s fw-700-s font_open_sans-s">Ahmad Zayn</span>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="mt-4">
+                                                                    <ul class="p-0 list_style_none-s">
+                                                                        <li class="my-1">
+                                                                            <div class="d-flex">
+                                                                                <div>
+                                                                                    <img class="w_30px-s" src="../assets_1/images/phone_yellow_icon.png" alt="phone icon" />
+                                                                                </div>
+                                                                                <div class="ml-2">
+                                                                                    <span class="text-white fs_12px-s fw-700-s fs_9px_after_screen_400 font_open_sans-s">
+                                                                                        +1 321 3214567
+                                                                                    </span>
+                                                                                </div>
+                                                                            </div>
+                                                                        </li>
+                                                                        <li class="my-2">
+                                                                            <div class="d-flex">
+                                                                                <div>
+                                                                                    <img class="w_30px-s" src="../assets_1/images/mail_yellow_icon.png" alt="phone icon" />
+                                                                                </div>
+                                                                                <div class="ml-2">
+                                                                                    <span class="text-white break_word-s fs_12px-s fw-700-s fs_9px_after_screen_400 font_open_sans-s">
+                                                                                        ahmadzayn@mail.com
+                                                                                    </span>
+                                                                                </div>
+                                                                            </div>
+                                                                        </li>
+                                                                    </ul>
+                                                                </div>
+                                                                <div class="text-center mt-2">
+                                                                    <button type="button" class="btn bg_yellow-s br_7px-s px-sm-3 px-1 py-1">
+                                                                        <span
+                                                                            class="fs_15px-s font_open_sans-s text fw-700-s">VIEW DETAILS</span>
+                                                                    </button>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-xl-4 col-lg-6 col-sm-12 col-12 d-flex flex-column  ">
+                                                            <div class="card bg_darkGrey-s p-3">
+                                                                <div class="text-center mt-2">
+                                                                    <div class="br_50-s">
+                                                                        <img class="w_80px-s" src="../assets_1/images/card_coach_img.png" alt="user image" />
+                                                                    </div>
+                                                                    <div class="mt-3">
+                                                                        <span class="text_yellow-s fs_18px-s fw-700-s font_open_sans-s">Ahmad Zayn</span>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="mt-4">
+                                                                    <ul class="p-0 list_style_none-s">
+                                                                        <li class="my-1">
+                                                                            <div class="d-flex">
+                                                                                <div>
+                                                                                    <img class="w_30px-s" src="../assets_1/images/phone_yellow_icon.png" alt="phone icon" />
+                                                                                </div>
+                                                                                <div class="ml-2">
+                                                                                    <span class="text-white fs_12px-s fw-700-s fs_9px_after_screen_400 font_open_sans-s">
+                                                                                        +1 321 3214567
+                                                                                    </span>
+                                                                                </div>
+                                                                            </div>
+                                                                        </li>
+                                                                        <li class="my-2">
+                                                                            <div class="d-flex">
+                                                                                <div>
+                                                                                    <img class="w_30px-s" src="../assets_1/images/mail_yellow_icon.png" alt="phone icon" />
+                                                                                </div>
+                                                                                <div class="ml-2">
+                                                                                    <span class="text-white break_word-s fs_12px-s fw-700-s fs_9px_after_screen_400 font_open_sans-s">
+                                                                                        ahmadzayn@mail.com
+                                                                                    </span>
+                                                                                </div>
+                                                                            </div>
+                                                                        </li>
+                                                                    </ul>
+                                                                </div>
+                                                                <div class="text-center mt-2">
+                                                                    <button type="button" class="btn bg_yellow-s br_7px-s px-sm-3 px-1 py-1">
+                                                                        <span
+                                                                            class="fs_15px-s font_open_sans-s text fw-700-s">VIEW DETAILS</span>
+                                                                    </button>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-1 text-center d-flex align-items-center justify-content-center">
+                                        <a class="mb-3 " href="#carouselExampleIndicators2"
+                                            role="button" data-slide="next">
+                                            <img class="w_30px-s" src="../assets_1/images/slider_right_icon.png" alt="slide right" />
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                        <!-- Slider section - END  -->
+                    </div>
+                </div>
+                <!-- Right Content Section - END  -->
+
+            </div>
+        </div>
+    </section>
+
+        <!-- Modal Section - START  -->
+    
+
+    <!-- Modal Add class - START -->
+    <div class="modal fade" id="addClassModal" tabindex="-1" role="dialog" aria-labelledby="addClassModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content card_bg_topleft_img-s bg_darkGrey-s br_10px-s">
+                <button type="button" class="close text-right outline_none-s" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">
+                        <img width="30" src="../assets_1/images/modal_close_icon.png" alt="close modal" />
+                    </span>
+                </button>
+                <div class="modal-body">
+                    <div class="my-5 px_5rem">
+                            <label for="Cname"><span class="text-white fs_14px-s font_open_sans-s">Class
+                                Name</span></label><br>
+                        <input type="text" class="br_5px-s px-2 font_open_sans-s py-2 w-100 b_none-s outline_none-s text_black-s fs_13px-s"
+                            placeholder="Yoga (etc)" id="Cname" name="Cname">
+                            <div class="mt-3">
+                                <label for="time"><span class="text-white fs_14px-s font_open_sans-s">Time
+                                    </span></label><br>
+                            <input type="text"
+                                class="br_5px-s px-2 font_open_sans-s py-2 w-100 b_none-s outline_none-s text_black-s fs_13px-s"
+                                placeholder="10:00 AM 11:00 AM" id="time" name="time">
+                            </div>
+                    </div>
+                    <div class="my-5 text-center">
+                        <button type="button" class="btn px_70px-s py-2 bg_yellow-s br_7px-s">
+                            <span class="fs_14px-s text_darkGrey-s font_open_sans-s fw-700-s">
+                                Add
+                            </span>
+                        </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal Add class - END -->
+
+    <!-- Modal Section - END  -->
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="../assets_1/script/script.js"></script>
+</body>
+
+</html>

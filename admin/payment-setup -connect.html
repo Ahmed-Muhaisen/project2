@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Payment Setup</title>
+		<link rel="stylesheet" type="text/css" href="../assets/css/style.css">
+	<link rel="stylesheet" type="text/css" href="../assets/font-awesome/css/font-awesome.min.css">
+	<!-- <link rel="stylesheet" type="text/css" href="../assets/css/bootstrap.min.css"> -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
+	<script type="text/javascript" src="../assets/script/jquery-3.2.1.min.js"></script>
+	<script type="text/javascript" src="../assets/script/bootstrap.min.js"></script>
+	 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href='https://fonts.googleapis.com/css?family=Open Sans' rel='stylesheet'>
+	<link href="https://fonts.googleapis.com/css2?family=Alef&display=swap" rel="stylesheet">
+
+ 
+</head>
+<body>
+
+
+	<div class="dashbaord_header">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-3 col-md-3">
+					<div class="dashbaord_logo">
+						<a href="dashboard.html"><img src="../assets/images/dashbaord_logo.png" class="img-fluid"></a>
+					</div>
+				</div>
+				<div class="col-lg-6 col-md-6"></div>
+				<div class="col-lg-3 col-md-3">
+					    <ul class="settings">
+			  				<i class="fa fa-bell" aria-hidden="true"></i> <img src="../assets/images/Ellipse.png">
+			  				<select class="form-select" aria-label="Default select example">
+				 			 <option selected>Aaban</option>
+				 			 <option value="1">One</option>
+				 			 <option value="2">Two</option>
+				 			 <option value="3">Three</option>
+							</select>
+			  			</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+
+	<section class="payment_page">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-4 col-md-6">
+					<div class="payment_chart">
+						<p class="payment_heading spacing">Total Revenue</p>
+						<span class="payment_total_heading"></span>
+						<p class="payment_price">$ 200,201</p>
+						<canvas id="chart1"></canvas>
+					</div>
+				</div>
+
+				<div class="col-lg-4 col-md-6">
+					<div class="payment_chart">
+						<p class="payment_heading blue">Online Classes</p>
+						<span class="payment_total_heading">Total Revenue</span>
+						<p class="payment_price">$ 80,501</p>
+						<canvas id="chart2"></canvas>
+					</div>
+				</div>
+
+				<div class="col-lg-4 col-md-6">
+					<div class="payment_chart">
+						<p class="payment_heading green">Nutrition Plan</p>
+						<span class="payment_total_heading">Total Revenue</span>
+						<p class="payment_price">$ 119,700</p>
+						<canvas id="chart3"></canvas>
+					</div>
+				</div>
+			</div>
+
+				<div class="row top_spacing">
+				<div class="col-lg-4 col-md-6">
+					<div class="payment_chart">
+						<p class="payment_heading yellow">Personal Classes</p>
+						<span class="payment_total_heading"></span>
+						<p class="monthly">2 Per month</p>
+						<canvas id="chart4"></canvas>
+					</div>
+				</div>
+
+				<div class="col-lg-4 col-md-6">
+					<div class="payment_chart">
+						<p class="payment_heading orange">Store product</p>
+						<p class="monthly">2200</p>
+						<canvas id="chart5"></canvas>
+					</div>
+				</div>
+
+				<div class="col-lg-4 col-md-6">
+					<div class="payment_chart">
+						<p class="payment_heading purple">Payment Method</p>
+						<p class="payment_method_title">You are Not connected with 
+						Payment methodPlease 
+						Connecte first..</p>
+						<div class="connect_button">
+							<a href="#" class="btn btn-default">connect</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+
+	<section class="graft">
+		<div class="container">
+			<div class="graft_chart">
+				<div class="row">
+					<div class="col-lg-6 col-md-6">
+						<h3>Tag Graph</h3>
+					</div>
+					<div class="col-lg-6 col-md-6">
+						 <ul class="settings text-right">
+			  				<select class="form-select" aria-label="Default select example">
+				 			 <option selected>month</option>
+				 			 <option value="1">month 1</option>
+				 			 <option value="2">month 2</option>
+				 			 <option value="3">month 3</option>
+							</select>
+			  			</ul>
+					</div>
+				</div>
+			<div class="row">
+				<div class="col-lg-12">
+					<ul class="tab_colors">
+						<li><img src="../assets/images/tag1.png"><p>Online Classes</p></li>
+						<li><img src="../assets/images/tag2.png"><p>Nutrition Plan</p></li>
+						<li><img src="../assets/images/tag3.png"><p>Personal Classes</p></li>
+						<li><img src="../assets/images/tag4.png"><p>Store Product</p></li>
+					</ul>
+					  <canvas id="custom-chart"></canvas>
+				</div>
+			</div>
+			</div>
+		</div>
+	</section>
+
+
+<!-----------------------------START JS CODE--------------------------------------->
+
+<script type="text/javascript" src="../assets/script/common.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+
+<script type="text/javascript">
+	
+const labels = [
+  'January',
+  'February',
+  'March',
+  'April',
+  'May',
+  'June',
+];
+
+const data = {
+  labels: labels,
+  datasets: [{
+    label: 'My First dataset',
+    backgroundColor: 'rgb(255, 99, 132)',
+    borderColor: 'rgb(255, 99, 132)',
+    data: [0, 10, 5, 2, 20, 30, 45],
+
+  }]
+
+};
+
+
+
+const config = {
+  type: 'line',
+  data: data,
+  options: {}
+};
+
+  const myChart = new Chart(
+    document.getElementById('custom-chart'),
+    config
+  );	
+  
+</script>
+
+
+</body>
+</html>
